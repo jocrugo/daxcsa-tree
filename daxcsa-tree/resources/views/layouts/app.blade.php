@@ -9,8 +9,8 @@
     'resources/js/app.js',
   ])
 </head>
-<body class="antialiased bg-white text-gray-900">
-  <div id="app">
+<body class="min-h-screen antialiased bg-gradient-to-br from-indigo-50 via-white to-sky-100 text-gray-900">
+  <div id="app" class="min-h-screen flex flex-col">
     @yield('content')
   </div>
 </body>
