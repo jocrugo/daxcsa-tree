@@ -1,4 +1,3 @@
-<!-- components/TreeView.vue -->
 <template>
   <div class="tree-node" :data-depth="depth">
     <div class="node-card" @click="onNodeClick(node)">

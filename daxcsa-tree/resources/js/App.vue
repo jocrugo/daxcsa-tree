@@ -1,4 +1,3 @@
-<!-- App.vue -->
 <template>
   <div class="app-container">
     <div class="main-container">
@@ -38,7 +37,6 @@ import data from './assets/Daxcsa.json'
 const treeData = data.data.attributes[0]
 const currentRoot = ref(treeData)
 
-// Determina si estamos en móvil (<600px)
 const isMobile = ref(false)
 function checkMobile() {
   isMobile.value = window.innerWidth <= 600
@@ -51,7 +49,6 @@ onUnmounted(() => {
   window.removeEventListener('resize', checkMobile)
 })
 
-// En móvil sólo un nivel; en desktop hasta 3
 const computedMaxDepth = computed(() => isMobile.value ? 1 : 3)
 
 function handleNodeClick(node) {
@@ -141,7 +138,7 @@ function goToParent() {
 
 .tree-wrapper {
   width: 100%;
-  overflow-x: hidden;  /* ya no scroll horizontal */
+  overflow-x: hidden; 
   overflow-y: auto;
   animation: fadeIn 0.6s both;
 }
